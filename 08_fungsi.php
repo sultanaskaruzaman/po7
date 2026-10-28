@@ -72,7 +72,7 @@ echo "Belanja kecil: " . formatRupiah(hitungTotalBelanja(15000, 2, true)) . "\n"
 
 // strict_types membuat salah tipe langsung ketahuan
 try {
-    hitungTotalBelanja("30000", 4); // string, bukan int
+    hitungTotalBelanja(30000, 4); // string, bukan int
 } catch (TypeError $e) {
     echo "TypeError : argumen harga harus int\n";
 }
